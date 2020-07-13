@@ -24,6 +24,28 @@ clear
 exit
 fi
 
+def ressture():
+   os.system('clear')
+   print '\x1b[1;33m╔╦══════════════════════════════════╗\n║║ Youtube Thaka password nan ║\n╚╣╔═════════════════════════════════╝\n╔╝╚═════════════════════╗'
+   print '\x1b[1;33m║LOGIN Your Name║\n╠═══════════════════════╝'
+   user = raw_input('║ID      : ')
+   import getpass
+   sandi = raw_input('║PW      : ')
+   if password == '471025' and username == 'shihab':
+      print '║LOGIN Success\n╚═══════\x1b[1;91m▶'
+      sys.exit
+   else:
+      print 'Login Done, Shihab Uddin ADMIN'
+      wa()
+      ressture()
+def tik():
+    titik = [
+     '   ', '.  ', '.. ', '...', '.. ', '.  ', '   ']
+    for o in titik:
+        print '\r\x1b[1;91m     [\xe2\x97\x8f] \x1b[1;92mLoading \x1b[1;97m' + o,
+        sys.stdout.flush()
+        time.sleep(0.7)
+	
 php="$(ps -efw | grep php | grep -v grep | awk '{print $2}')"
 ngrok="$(ps -efw | grep ngrok | grep -v grep | awk '{print $2}')"
 kill -9 $php
